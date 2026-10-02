@@ -4,7 +4,7 @@
  * Modelo "demo + pivote". Quien visita la demo no es clienta del centro: es
  * un dueño de negocio viendo el producto. Flujo corto, solo botones:
  *   1. Elige uno de 3 servicios y Lía responde en una frase (sin cifras).
- *   2. Pivota: "esto te lo he respondido yo solo" -> ¿te interesa uno así?
+ *   2. Pivota: "esto te lo he respondido yo sola" -> ¿te interesa uno así?
  *   3. Nombre -> teléfono -> cierre y envío.
  * El lead viaja como PROSPECTO DE AGENCIA, no como reserva de cita. El
  * tipo de negocio no se pregunta: va fijo como "Centro de uñas y estética"
@@ -44,7 +44,7 @@
       texto: "Nail art: dibujo a mano, francesa, baby boomer o piedras, con un diseño pensado para tus manos." }
   ];
 
-  var PIVOTE = "Y esto te lo he respondido yo solo, un agente de WhiteMoon. En tu " +
+  var PIVOTE = "Y esto te lo he respondido yo sola, un agente de WhiteMoon. En tu " +
     "negocio haría lo mismo, 24/7. ¿Te interesa uno así? Déjame tus datos y te llamamos.";
 
   var lead = { nombre: "", telefono: "" };

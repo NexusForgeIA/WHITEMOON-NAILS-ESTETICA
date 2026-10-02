@@ -209,8 +209,8 @@ servicio → respuesta breve → pivote → nombre → teléfono → cierre
    con 3 botones: **Semipermanente**, **Uñas de gel o acrílico** y **Nail art**.
 2. Al pulsar uno, Lía responde con una frase fija sobre ese servicio. **Sin
    cifras**: ningún precio ni dato del centro inventado.
-3. A continuación viene el pivote, idéntico al del molde: *"Y esto te lo he
-   respondido yo solo, un agente de WhiteMoon. En tu negocio haría lo mismo,
+3. A continuación viene el pivote, el del molde en femenino: *"Y esto te lo he
+   respondido yo sola, un agente de WhiteMoon. En tu negocio haría lo mismo,
    24/7. ¿Te interesa uno así? Déjame tus datos y te llamamos."*
 4. *"¿Cómo te llamas?"* → *"¿Tu teléfono?"* → cierre *"Perfecto, {nombre}. Te
    llamamos al {telefono}."* y envío del lead.
