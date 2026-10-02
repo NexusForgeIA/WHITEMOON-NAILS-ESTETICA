@@ -89,6 +89,19 @@ reserva coincide con la altura medida en cada breakpoint (50 · 62 · 70 · 77 �
 81 · 85 px) y el CLS es **0**. La altura la marca el logo, no el texto, así
 que no cambia al llegar la fuente.
 
+Los enlaces de la barra van a 1.125rem hasta 1279 px y suben a 1.4rem desde
+**1280**. Antes subían en 1024 y entre 1024 y ~1280 "Habla con el agente" se
+partía en dos líneas (barra de 104 px). Ahora es una sola fila de 84,8 px a
+1024, 1100 y 1280.
+
+### Foto del hero centrada
+
+`.hero__img` se centra con la propiedad **`translate`**, no con `transform`:
+el reveal (`[data-rv].in { transform: none }`) y el magnet (`style.transform`)
+escriben `transform` y pisaban el `translate(-50%)`, así que la foto salía
+descentrada. `translate` se compone aparte, y el reveal y el magnet siguen
+igual.
+
 ---
 
 ## Paleta y contrastes

@@ -368,7 +368,11 @@ ul { list-style: none; }
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  /* Centrado con la propiedad `translate`, NO con `transform`: el reveal
+     ([data-rv] → transform:none al entrar) y el magnet (style.transform)
+     escriben `transform` y pisaban el translate(-50%), así que la foto
+     quedaba descentrada. `translate` se compone aparte y nadie la toca. */
+  translate: -50% -50%;
   z-index: 10;
   width: 280px;
   pointer-events: none;
@@ -897,7 +901,7 @@ ul { list-style: none; }
   .hero__img {
     top: auto;
     bottom: 0;
-    transform: translateX(-50%);
+    translate: -50% 0;
     width: 360px;
   }
 
@@ -1009,6 +1013,9 @@ ul { list-style: none; }
 @media (min-width: 900px) {
   :root { --nav-h: 81px; }
   .nav { gap: 2rem; }
+  /* Cada enlace en una sola línea: si no cupiera, que se vea en la medición
+     (desborde) en vez de partirse y estirar la barra. */
+  .nav a, .nav button { white-space: nowrap; }
   /* A partir de aquí sí caben emblema + wordmark + los 4 enlaces */
   .wm img { height: 48px; }
   .wm span { display: block; font-size: 1.15rem; }
@@ -1022,11 +1029,22 @@ ul { list-style: none; }
 
 @media (min-width: 1024px) {
   :root { --nav-h: 85px; }
-  .nav a, .nav button { font-size: 1.4rem; }
   .wm img { height: 52px; }
   .wm span { font-size: 1.3rem; }
   .hero__img { width: 520px; }
   .hero__bar p { max-width: 440px; }
+}
+
+/* ================================================= BREAKPOINT 1280 (xl) === */
+
+/*
+ * Los enlaces de la barra suben a 1.4rem solo desde aquí. Antes lo hacían
+ * desde 1024 y entre 1024 y ~1280 no cabían en una fila con el wordmark:
+ * "Habla con el agente" se partía en dos líneas y la barra pasaba de 85px
+ * a 104px. Entre 900 y 1279 se quedan en 1.125rem (el de 768).
+ */
+@media (min-width: 1280px) {
+  .nav a, .nav button { font-size: 1.4rem; }
 }
 
 /* ============================================== AJUSTES SOLO MÓVIL (<600) === */
