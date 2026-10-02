@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhiteMoon — Centro de uñas y estética</title>
+<meta name="description" content="Centro de uñas en el noroeste de Madrid: manicura semipermanente, uñas de gel y acrílico, nail art y pedicura. Habla con el agente IA, sin compromiso.">
+<meta name="author" content="WhiteMoon">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#FFFBF9">
+<link rel="canonical" href="https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/">
+<link rel="alternate" hreflang="es" href="https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/">
+<link rel="alternate" hreflang="x-default" href="https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/">
+
+<!-- Señales GEO -->
+<meta name="geo.region" content="ES-MD">
+<meta name="geo.placename" content="Majadahonda, Madrid, España">
+<meta name="ICBM" content="40.4737, -3.8716">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="WhiteMoon">
+<meta property="og:url" content="https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/">
+<meta property="og:title" content="WhiteMoon — Centro de uñas y estética">
+<meta property="og:description" content="Centro de uñas en el noroeste de Madrid: manicura semipermanente, uñas de gel y acrílico, nail art y pedicura. Habla con el agente IA, sin compromiso.">
+<meta property="og:image" content="https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/assets/img/og-nails.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Manicurista aplicando esmalte en las uñas de una clienta">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WhiteMoon — Centro de uñas y estética">
+<meta name="twitter:description" content="Centro de uñas en el noroeste de Madrid: manicura semipermanente, uñas de gel y acrílico, nail art y pedicura. Habla con el agente IA, sin compromiso.">
+<meta name="twitter:image" content="https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/assets/img/og-nails.jpg">
+
+<!--
+  Kanit va autoalojada en assets/fonts (subset latin). Se precarga solo el
+  peso 900, que es el del titular del hero: así el texto ya se pinta con la
+  tipografía definitiva y no hay reflow al llegar la fuente. El resto de
+  pesos entra por CSS con font-display:swap.
+  Las fotos también son locales: nada de hotlink a Unsplash en caliente.
+-->
+<!-- Sin favicon el navegador pide /favicon.ico igualmente y el 404 acaba en
+     la consola (y en el informe de Lighthouse). Se declaran los tres. -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<link rel="preload" href="assets/fonts/kanit-900-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/img/hero-nails.jpg" as="image" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<!--
+  JSON-LD en un único @graph: evita FAQPage duplicados y mantiene una sola
+  fuente por entidad. NailSalon es subtipo válido de LocalBusiness. Las
+  respuestas del FAQPage son texto plano, sin etiquetas inline, y coinciden
+  palabra por palabra con el DOM visible de "Preguntas frecuentes".
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "NailSalon",
+      "@id": "https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/#negocio",
+      "name": "WhiteMoon",
+      "description": "Centro de uñas y estética en el noroeste de Madrid: manicura semipermanente, uñas de gel y acrílico, nail art, pedicura y retirada y cuidado de la uña natural, con material desinfectado y limas de un solo uso. Demo de WhiteMoon Agencia IA.",
+      "url": "https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/",
+      "image": "https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/assets/img/og-nails.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Majadahonda",
+        "addressRegion": "Madrid",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.4737104,
+        "longitude": -3.8715623
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Majadahonda" },
+        { "@type": "City", "name": "Las Rozas de Madrid" },
+        { "@type": "City", "name": "Pozuelo de Alarcón" },
+        { "@type": "City", "name": "Boadilla del Monte" },
+        { "@type": "City", "name": "Torrelodones" }
+      ],
+      "telephone": "+34643199580",
+      "email": "comercial@whitemoon.es",
+      "sameAs": ["https://whitemoon.es/"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de uñas",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manicura semipermanente" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Uñas de gel y acrílico" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nail art y diseño" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pedicura" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Retirada y cuidado de la uña natural" } }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/#servicio",
+      "name": "Manicura semipermanente, uñas de gel y acrílico, nail art y pedicura",
+      "serviceType": "Centro de uñas y estética",
+      "description": "Manicura semipermanente, uñas de gel y acrílico con la forma y el largo que elijas, nail art y diseño, pedicura con o sin esmaltado, y retirada y cuidado de la uña natural. Presupuesto sin compromiso, con material desinfectado y limas de un solo uso.",
+      "url": "https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/",
+      "provider": { "@id": "https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/#negocio" },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Noroeste de Madrid"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/#migas",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/"
+      }]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta una manicura?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende del servicio, del largo y del diseño: no cuesta lo mismo un semipermanente liso que unas uñas de gel con nail art. Te damos un presupuesto antes de empezar, sin compromiso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto dura el semipermanente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de lo rápido que crezca tu uña y de cómo la cuides en casa. Te explicamos cómo alargarlo y te avisamos de cuándo conviene volver para retirarlo o renovarlo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Daña la uña natural?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, si se aplica y se retira bien. El daño suele venir de arrancarlo o de limar de más: por eso hacemos la retirada en el centro, con cuidado y sin forzar la uña."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El material es higiénico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Las herramientas se desinfectan y se esterilizan después de cada servicio, y las limas son de un solo uso: se estrenan contigo y no se reutilizan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hacéis pedicura?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, con o sin esmaltado semipermanente: corte y limado, cuidado de las cutículas e hidratación de los pies."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="wrapper">
+
+  <!--
+    Barra fija. Va FUERA del hero a propósito: position:sticky solo pega
+    dentro de su contenedor, así que dentro del hero dejaría de estarlo al
+    pasar de largo. Como hermana de .wrapper, acompaña toda la página.
+  -->
+  <nav class="nav" aria-label="Navegación principal"
+       data-rv style="--ry:-20px; --rdelay:0s">
+
+    <!-- Logo de la marca: vuelve al inicio de ESTA web. Se usa "#top" y no
+         "/" porque en GitHub Pages la raíz sale del subdirectorio del repo.
+         El emblema lleva el alt, y el wordmark de al lado va aria-hidden
+         para que un lector no diga "WhiteMoon" dos veces. -->
+    <a class="wm" href="#top">
+      <picture>
+        <source srcset="assets/img/whitemoon-logo.webp" type="image/webp">
+        <img src="assets/img/whitemoon-logo.png" width="119" height="124" alt="WhiteMoon">
+      </picture>
+      <span aria-hidden="true">WhiteMoon</span>
+    </a>
+
+    <div class="nav__links">
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Trabajos</a>
+      <button type="button" data-agente>Habla con el agente</button>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Un único <main>: el nav queda fuera y el footer también. -->
+  <main id="contenido" tabindex="-1">
+
+  <!-- =================================================== 1. HERO ===== -->
+  <header class="hero" id="top">
+
+    <div class="hero__title">
+      <h1 class="hero-heading" data-rv style="--ry:40px; --rdelay:.15s">uñas con arte</h1>
+    </div>
+
+    <div class="hero__bar">
+      <p data-rv style="--ry:20px; --rdelay:.35s">
+        centro de uñas: manicura semipermanente, gel, acrílico y nail art,
+        con material desinfectado y limas de un solo uso
+      </p>
+      <button class="btn btn--primary" type="button" data-agente
+              data-rv style="--ry:20px; --rdelay:.5s">
+        Habla con el agente
+      </button>
+    </div>
+
+    <!-- [IMG_HERO] -->
+    <div class="hero__img magnet" data-magnet data-rv style="--ry:30px; --rdelay:.6s">
+      <img src="assets/img/hero-nails.jpg" width="1040" height="693" fetchpriority="high"
+           alt="Manicurista aplicando esmalte en las uñas de una clienta">
+    </div>
+  </header>
+
+  <!-- ================================================ 2. MARQUEE ===== -->
+  <section class="marquee" data-marquee aria-label="Galería del centro de uñas">
+    <div class="marquee__row">
+      <!-- [IMG_MARQUEE_1] … [IMG_MARQUEE_11] -->
+      <img src="assets/img/mq-01.jpg" width="840" height="540" loading="lazy" alt="Manicurista limando las uñas de una clienta sobre un aspirador de mesa">
+      <img src="assets/img/mq-02.jpg" width="840" height="540" loading="lazy" alt="Manicura en proceso sobre una mesa de mármol rosa">
+      <img src="assets/img/mq-03.jpg" width="840" height="540" loading="lazy" alt="Manos con nail art en azul marino, dorado y blanco">
+      <img src="assets/img/mq-04.jpg" width="840" height="540" loading="lazy" alt="Manos con uñas largas en blanco decoradas con pequeños dibujos">
+      <img src="assets/img/mq-05.jpg" width="840" height="540" loading="lazy" alt="Mano sobre punto blanco con uñas en lila, blanco y purpurina plateada">
+      <img src="assets/img/mq-06.jpg" width="840" height="540" loading="lazy" alt="Estanterías de pared llenas de esmaltes de colores">
+      <img src="assets/img/mq-07.jpg" width="840" height="540" loading="lazy" alt="Muestrario de uñas en tonos nude, gris, blanco y purpurina">
+      <img src="assets/img/mq-08.jpg" width="840" height="540" loading="lazy" alt="Pincel aplicando esmalte sobre una uña">
+      <img src="assets/img/mq-09.jpg" width="840" height="540" loading="lazy" alt="Uñas cortas pintadas en distintos tonos pastel">
+      <img src="assets/img/mq-10.jpg" width="840" height="540" loading="lazy" alt="Mesa de manicura con lámpara, esmaltes y un espejo redondo">
+      <img src="assets/img/mq-11.jpg" width="840" height="540" loading="lazy" alt="Pie con las uñas pintadas de rosa fucsia">
+    </div>
+    <div class="marquee__row">
+      <!-- [IMG_MARQUEE_12] … [IMG_MARQUEE_21] -->
+      <img src="assets/img/mq-12.jpg" width="840" height="540" loading="lazy" alt="Herramientas de pedicura sobre una toalla azul: limas, alicates y separadores de dedos">
+      <img src="assets/img/mq-11.jpg" width="840" height="540" loading="lazy" alt="Pie con las uñas pintadas de rosa fucsia">
+      <img src="assets/img/mq-10.jpg" width="840" height="540" loading="lazy" alt="Mesa de manicura con lámpara, esmaltes y un espejo redondo">
+      <img src="assets/img/mq-09.jpg" width="840" height="540" loading="lazy" alt="Uñas cortas pintadas en distintos tonos pastel">
+      <img src="assets/img/mq-08.jpg" width="840" height="540" loading="lazy" alt="Pincel aplicando esmalte sobre una uña">
+      <img src="assets/img/mq-07.jpg" width="840" height="540" loading="lazy" alt="Muestrario de uñas en tonos nude, gris, blanco y purpurina">
+      <img src="assets/img/mq-06.jpg" width="840" height="540" loading="lazy" alt="Estanterías de pared llenas de esmaltes de colores">
+      <img src="assets/img/mq-05.jpg" width="840" height="540" loading="lazy" alt="Mano sobre punto blanco con uñas en lila, blanco y purpurina plateada">
+      <img src="assets/img/mq-04.jpg" width="840" height="540" loading="lazy" alt="Manos con uñas largas en blanco decoradas con pequeños dibujos">
+      <img src="assets/img/mq-03.jpg" width="840" height="540" loading="lazy" alt="Manos con nail art en azul marino, dorado y blanco">
+    </div>
+  </section>
+
+  <!-- ========================================== 3. SOBRE NOSOTROS ===== -->
+  <section class="about" id="sobre-nosotros">
+
+    <!-- [IMG_DECO_1] -->
+    <div class="about__deco deco-tl" data-rv style="--rx:-80px; --rdelay:.1s; --rdur:.9s" aria-hidden="true">
+      <img src="assets/img/deco-1.jpg" width="440" height="440" loading="lazy" alt="">
+    </div>
+    <!-- [IMG_DECO_2] -->
+    <div class="about__deco deco-bl" data-rv style="--rx:-80px; --rdelay:.25s" aria-hidden="true">
+      <img src="assets/img/deco-2.jpg" width="440" height="440" loading="lazy" alt="">
+    </div>
+    <!-- [IMG_DECO_3] -->
+    <div class="about__deco deco-tr" data-rv style="--rx:80px; --rdelay:.15s" aria-hidden="true">
+      <img src="assets/img/deco-3.jpg" width="440" height="440" loading="lazy" alt="">
+    </div>
+    <!-- [IMG_DECO_4] -->
+    <div class="about__deco deco-br" data-rv style="--rx:80px; --rdelay:.3s" aria-hidden="true">
+      <img src="assets/img/deco-4.jpg" width="440" height="440" loading="lazy" alt="">
+    </div>
+
+    <h2 class="hero-heading" data-rv style="--ry:40px">Sobre nosotros</h2>
+
+    <p class="about__text" data-chars>En WhiteMoon cada manicura empieza por escucharte: forma, largo y color a tu gusto, cuidando la uña natural de principio a fin. Semipermanente, gel, acrílico y nail art, sin prisas.</p>
+
+    <div class="about__cta">
+      <button class="btn btn--primary" type="button" data-agente>Habla con el agente</button>
+    </div>
+  </section>
+
+  <!-- =============================================== 4. SERVICIOS ===== -->
+  <section class="services" id="servicios">
+    <h2>Servicios</h2>
+
+    <div class="services__list">
+      <article class="service" data-rv style="--ry:24px; --rdelay:0s">
+        <p class="service__n" aria-hidden="true">01</p>
+        <div class="service__b">
+          <h3>Manicura semipermanente</h3>
+          <p>Color con brillo que aguanta, aplicado con lámpara sobre una uña bien preparada: cutícula, limado y forma antes de empezar.</p>
+        </div>
+      </article>
+
+      <article class="service" data-rv style="--ry:24px; --rdelay:.1s">
+        <p class="service__n" aria-hidden="true">02</p>
+        <div class="service__b">
+          <h3>Uñas de gel y acrílico</h3>
+          <p>Alargamos o reforzamos la uña con la forma y el largo que elijas: almendra, cuadrada, bailarina o natural.</p>
+        </div>
+      </article>
+
+      <article class="service" data-rv style="--ry:24px; --rdelay:.2s">
+        <p class="service__n" aria-hidden="true">03</p>
+        <div class="service__b">
+          <h3>Nail art y diseño</h3>
+          <p>Dibujo a mano, francesa, baby boomer, piedras y acabados especiales: lo que tengas en mente, pensado para tus manos.</p>
+        </div>
+      </article>
+
+      <article class="service" data-rv style="--ry:24px; --rdelay:.3s">
+        <p class="service__n" aria-hidden="true">04</p>
+        <div class="service__b">
+          <h3>Pedicura</h3>
+          <p>Cuidado completo de los pies, con o sin esmaltado semipermanente, para que luzcan igual de bien que las manos.</p>
+        </div>
+      </article>
+
+      <article class="service" data-rv style="--ry:24px; --rdelay:.4s">
+        <p class="service__n" aria-hidden="true">05</p>
+        <div class="service__b">
+          <h3>Retirada y cuidado de la uña natural</h3>
+          <p>Retiramos el producto sin dañar la uña, la hidratamos y la ayudamos a recuperarse entre un servicio y otro.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =============================================== 5. PROYECTOS ===== -->
+  <section class="work" id="proyectos">
+    <h2 class="hero-heading" data-rv style="--ry:40px">Nuestro trabajo</h2>
+
+    <div class="cases">
+
+      <!-- Caso 01 -->
+      <div class="case-slot">
+        <article class="case" style="--i:0">
+          <div class="case__top">
+            <p class="case__n" aria-hidden="true">01</p>
+            <div class="case__meta">
+              <span class="case__cat">Portfolio</span>
+              <h3 class="case__name">Nail art floral</h3>
+            </div>
+            <button class="btn btn--ghost" type="button" data-agente>Habla con el agente</button>
+          </div>
+          <div class="case__grid">
+            <div class="case__col">
+              <!-- [IMG_P1_A] -->
+              <img class="case__a" src="assets/img/case1-a.jpg" width="940" height="460" loading="lazy"
+                   alt="Manos con manicura nude en degradado junto a dos orquídeas">
+              <!-- [IMG_P1_B] -->
+              <img class="case__b" src="assets/img/case1-b.jpg" width="940" height="676" loading="lazy"
+                   alt="Mano con uñas decoradas con pequeñas flores, sujetando una flor rosa">
+            </div>
+            <div class="case__col">
+              <!-- [IMG_P1_C] -->
+              <img class="case__c" src="assets/img/case1-c.jpg" width="1200" height="980" loading="lazy"
+                   alt="Mano con manicura clara apoyada entre peonías rosas y blancas">
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Caso 02 -->
+      <div class="case-slot">
+        <article class="case" style="--i:1">
+          <div class="case__top">
+            <p class="case__n" aria-hidden="true">02</p>
+            <div class="case__meta">
+              <span class="case__cat">Portfolio</span>
+              <h3 class="case__name">Francesa y baby boomer</h3>
+            </div>
+            <button class="btn btn--ghost" type="button" data-agente>Habla con el agente</button>
+          </div>
+          <div class="case__grid">
+            <div class="case__col">
+              <!-- [IMG_P2_A] -->
+              <img class="case__a" src="assets/img/case2-a.jpg" width="940" height="460" loading="lazy"
+                   alt="Manos con manicura francesa sujetando una taza blanca">
+              <!-- [IMG_P2_B] -->
+              <img class="case__b" src="assets/img/case2-b.jpg" width="940" height="676" loading="lazy"
+                   alt="Mano con manicura francesa apoyada sobre encaje blanco">
+            </div>
+            <div class="case__col">
+              <!-- [IMG_P2_C] -->
+              <img class="case__c" src="assets/img/case2-c.jpg" width="1200" height="980" loading="lazy"
+                   alt="Manos cruzadas con uñas en degradado de rosa a blanco, estilo baby boomer">
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Caso 03 — el único con formato Antes / Después: en una recuperación
+           sí hay un estado previo que enseñar. Los pies de foto describen lo
+           que se ve en cada imagen de stock, sin dar a entender que sean la
+           misma mano antes y después. -->
+      <div class="case-slot">
+        <article class="case" style="--i:2">
+          <div class="case__top">
+            <p class="case__n" aria-hidden="true">03</p>
+            <div class="case__meta">
+              <span class="case__cat">Antes / Después</span>
+              <h3 class="case__name">Recuperación de la uña natural</h3>
+            </div>
+            <button class="btn btn--ghost" type="button" data-agente>Habla con el agente</button>
+          </div>
+          <div class="case__grid">
+            <div class="case__col">
+              <!-- [IMG_P3_A] -->
+              <img class="case__a" src="assets/img/case3-a.jpg" width="940" height="460" loading="lazy"
+                   alt="Antes: uña con restos de esmalte rojo mientras se pule con un taco">
+              <!-- [IMG_P3_B] -->
+              <img class="case__b" src="assets/img/case3-b.jpg" width="940" height="676" loading="lazy"
+                   alt="Cuidado: manos en remojo en un bol mientras una manicurista con guantes trabaja las uñas">
+            </div>
+            <div class="case__col">
+              <!-- [IMG_P3_C] -->
+              <img class="case__c" src="assets/img/case3-c.jpg" width="1200" height="980" loading="lazy"
+                   alt="Después: manos con uñas naturales cuidadas, en tono nude">
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================== FAQ ===== -->
+  <!--
+    Fuera del orden de secciones del spec, pero necesario: el FAQPage de
+    schema.org exige que las respuestas estén visibles en el DOM.
+  -->
+  <section class="faq" id="faq">
+    <div class="faq__in">
+      <h2 class="hero-heading" data-rv style="--ry:40px">Preguntas</h2>
+
+      <details>
+        <summary>¿Cuánto cuesta una manicura?</summary>
+        <p class="faq__a">Depende del servicio, del largo y del diseño: no cuesta lo mismo un semipermanente liso que unas uñas de gel con nail art. Te damos un presupuesto antes de empezar, sin compromiso.</p>
+      </details>
+
+      <details>
+        <summary>¿Cuánto dura el semipermanente?</summary>
+        <p class="faq__a">Depende de lo rápido que crezca tu uña y de cómo la cuides en casa. Te explicamos cómo alargarlo y te avisamos de cuándo conviene volver para retirarlo o renovarlo.</p>
+      </details>
+
+      <details>
+        <summary>¿Daña la uña natural?</summary>
+        <p class="faq__a">No, si se aplica y se retira bien. El daño suele venir de arrancarlo o de limar de más: por eso hacemos la retirada en el centro, con cuidado y sin forzar la uña.</p>
+      </details>
+
+      <details>
+        <summary>¿El material es higiénico?</summary>
+        <p class="faq__a">Sí. Las herramientas se desinfectan y se esterilizan después de cada servicio, y las limas son de un solo uso: se estrenan contigo y no se reutilizan.</p>
+      </details>
+
+      <details>
+        <summary>¿Hacéis pedicura?</summary>
+        <p class="faq__a">Sí, con o sin esmaltado semipermanente: corte y limado, cuidado de las cutículas e hidratación de los pies.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ================================================= CONTACTO ===== -->
+  <section class="contact" id="contacto">
+    <div class="contact__in">
+
+      <div class="contact__col">
+        <h2 class="hero-heading" data-rv style="--ry:30px">Contacto</h2>
+        <p data-rv style="--ry:20px; --rdelay:.1s">
+          Cuéntale al agente qué te quieres hacer y te respondemos con una
+          propuesta y un precio, sin compromiso.
+        </p>
+
+        <div class="contact__cta" data-rv style="--ry:20px; --rdelay:.15s">
+          <button class="btn btn--primary" type="button" data-agente>Habla con el agente</button>
+        </div>
+
+        <!-- Datos de contacto reales de WhiteMoon: los enlaces funcionan. -->
+        <div class="contact__card" data-rv style="--ry:20px; --rdelay:.2s">
+          <p class="contact__tag">Datos de contacto</p>
+
+          <ul class="contact__data">
+            <li>
+              <span class="contact__ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6.3 3h3l1.5 4-2 1.4a12 12 0 0 0 5.8 5.8l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.3 5.2 2 2 0 0 1 6.3 3z"/>
+                </svg>
+              </span>
+              <span class="contact__val">
+                <a href="tel:+34643199580">643 199 580</a>
+                <span>Teléfono y WhatsApp</span>
+              </span>
+            </li>
+
+            <li>
+              <span class="contact__ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/>
+                </svg>
+              </span>
+              <span class="contact__val">
+                <a href="mailto:comercial@whitemoon.es">comercial@whitemoon.es</a>
+                <span>Email</span>
+              </span>
+            </li>
+
+            <li>
+              <span class="contact__ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/>
+                </svg>
+              </span>
+              <span class="contact__val">
+                <a href="https://maps.google.com/maps?q=WhiteMoon+Agencia+IA+Majadahonda" target="_blank" rel="noopener">Majadahonda, Madrid</a>
+                <span>Ubicación</span>
+              </span>
+            </li>
+          </ul>
+
+          <a class="btn btn--ghost contact__wa" href="https://wa.me/34643199580"
+             target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.3L3 21l2.2-5.4A8.4 8.4 0 1 1 21 11.5z"/>
+              <path d="M8.6 9.2c0 3.4 2.8 6.2 6.2 6.2l1.1-1.6-2-1-1 .9a5 5 0 0 1-2.6-2.6l.9-1-1-2-1.6 1.1z" fill="currentColor" stroke="none"/>
+            </svg>
+            Escríbenos por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="contact__map" data-rv style="--ry:24px; --rdelay:.25s">
+        <iframe
+          src="https://maps.google.com/maps?q=40.4737104,-3.8715623&amp;z=16&amp;output=embed"
+          title="Ubicación en el mapa"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="contact__nota">
+      <div class="slot" data-rv style="--ry:20px; --rdelay:.1s">
+        <b>Hueco reservado</b>
+        <p>
+          Esta es una demo de WhiteMoon para un centro de uñas y estética. El
+          teléfono, el email y el mapa son reales, así que los enlaces
+          funcionan; en la web de un cliente irían los suyos. Las fotos son
+          imágenes de stock, no trabajos de un centro concreto, y los casos
+          de "Nuestro trabajo" son ejemplos ilustrativos: no se inventa nada.
+          Aquí es donde irían los diseños y las reseñas reales del centro.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__in">
+      <p>WhiteMoon · Demo</p>
+      <p>Agencia IA · Majadahonda, Madrid</p>
+    </div>
+  </footer>
+
+</div>
+
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/lead.js" defer></script>
+<script src="assets/js/agente.js" defer></script>
+</body>
+</html>

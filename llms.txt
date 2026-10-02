@@ -1,0 +1,60 @@
+# WhiteMoon
+
+> Centro de uñas y estética en el noroeste de Madrid: manicura semipermanente,
+> uñas de gel y acrílico, nail art y diseño, pedicura y retirada y cuidado de
+> la uña natural. Es una DEMO de WhiteMoon Agencia IA con marca de ejemplo: no
+> es un centro real y no contiene reseñas, años de experiencia, profesionales
+> ni clientes.
+
+## Páginas
+
+- [WhiteMoon — Centro de uñas y estética](https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/): landing única con servicios, galería del centro, trabajos y preguntas frecuentes.
+- [Servicios](https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/#servicios): los cinco servicios que presta el centro.
+- [Nuestro trabajo](https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/#proyectos): diseños de portfolio ilustrativos y una recuperación de la uña natural en formato antes/después.
+- [Preguntas frecuentes](https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/#faq): precio, duración del semipermanente, cuidado de la uña natural, higiene del material y pedicura.
+- [Contacto](https://nexusforgeia.github.io/WHITEMOON-NAILS-ESTETICA/#contacto): acceso al asistente del centro.
+
+## Servicios
+
+- Manicura semipermanente: color con brillo aplicado con lámpara sobre una uña bien preparada.
+- Uñas de gel y acrílico: alargamiento o refuerzo con la forma y el largo que elija la clienta.
+- Nail art y diseño: dibujo a mano, francesa, baby boomer, piedras y acabados especiales.
+- Pedicura: cuidado completo de los pies, con o sin esmaltado semipermanente.
+- Retirada y cuidado de la uña natural: retirada sin dañar la uña, hidratación y recuperación.
+
+## Zona de cobertura
+
+Majadahonda, Las Rozas de Madrid, Pozuelo de Alarcón, Boadilla del Monte
+y Torrelodones.
+
+## Precio
+
+No hay tarifa pública: el importe depende del servicio, del largo y del
+diseño. El presupuesto es sin compromiso y se da antes de empezar.
+
+## Higiene
+
+Las herramientas se desinfectan y se esterilizan después de cada servicio, y
+las limas son de un solo uso.
+
+## Agente IA
+
+La web incluye a Lía, la asistente IA del centro (rotulada como "Asistente
+IA"). En esta demo responde con una frase sobre el servicio elegido y después
+explica que es un agente de WhiteMoon y ofrece uno igual al dueño del negocio
+que la está probando: pide su nombre y su teléfono, y el aviso llega al equipo
+de WhiteMoon al instante.
+
+## Aviso sobre esta demo
+
+- [WhiteMoon Agencia IA](https://whitemoon.es/) es la agencia que ha construido esta demo.
+- La web está a nombre de WhiteMoon, que es la agencia que la ha construido:
+  para un cliente real se sustituiría por su marca.
+- El teléfono (643 199 580), el email (comercial@whitemoon.es) y el mapa de la
+  sección de contacto son los reales de WhiteMoon, la agencia que ha hecho la
+  demo, no los de un centro de uñas. Para un cliente real irían los suyos.
+- Las fotografías son imágenes de stock de Unsplash sobre manicura y pedicura
+  en general, no trabajos realizados por un centro concreto.
+- Los casos de "Nuestro trabajo" son ejemplos ilustrativos, no clientas reales.
+  Los dos primeros están etiquetados como portfolio; en la recuperación de la
+  uña natural, las imágenes de "antes" y "después" no son la misma mano.
